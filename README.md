@@ -1,7 +1,7 @@
 # PA2: Cipher Decryption Assignment
  
 ## Overview
-This assignment involves writing a program that attempts to decrypt multiple text files using different classical ciphers. You will analyze the results and save the top candidate decryptions. Begin by filling out the necessary information below then finding the complete instructions 
+This assignment involves writing a program that attempts to decrypt multiple text files using different classical ciphers. You will analyze the results and save the top candidate decryptions. Begin by filling out the necessary information below then completing the implementation in [Requirements](#requirements). 
 
 **Student Name:**  <br>
 **Student ID:**  <br>
@@ -49,7 +49,7 @@ future (a learning experience).
 2. **Spaces in Cipher Text**  
   - For simplicity, spaces should be passed through unchanged to the cipher text. In other words, all word breaks in the original text will be visible in the cipher text and should remain visible in the decrypted output.
 
-2. **Decryption Methods**  
+3. **Decryption Methods**  
    Use or implement publicly available decryption methods for the following ciphers:
    - Caesar cipher
    - Vigenère cipher
@@ -57,7 +57,7 @@ future (a learning experience).
    
    **Note:** Exclude any ciphers that are simplifications of the first two given ciphers above. For example, ROT1, ROT13, and other Caesar cipher variants with specific shift values should not be chosen as they are well-known simplifications of the Caesar cipher.
 
-3. **Evaluation**  
+4. **Evaluation**  
    - Determine the **5 best decryptions overall** across all input files and ciphers.  
    - For the Vigenère cipher, you can assume that the key length will be at most four characters (e.g., B, BE, BOP, Bop1, etc.). Similar restrictions may be assumed for any cipher with high time or memory complexity.
    - Restrict the evaluation alphabet to:
@@ -65,7 +65,7 @@ future (a learning experience).
     a..z A..Z 0..9 . : ; ' ! ?
     ```
    **Note:** Spaces are always passed through and visible in the cipher and decrypted text
-4. **Output Format**  
+5. **Output Format**  
    - Save the 5 best decryptions in a single file named `output.md`.
    - The `output.md` file should be structured as follows:
      - Each **input file** should have a **top-level section** (e.g., `# input1.txt`).
@@ -106,7 +106,7 @@ future (a learning experience).
 
 ## Notes
 - Ensure your program handles both uppercase and lowercase letters, digits, spaces (which are always passed through and visible), and the given symbols consistently.
-- Always use the alphabet exactly as given in `3. Evaluation` and in the Example below.
+- Always use the alphabet exactly as given in `4. Evaluation` and in the Example below.
 - Design your scoring mechanism to fairly evaluate likelihood of correctness (e.g., letter frequencies, dictionary matching, n-gram analysis).
 - The additional substitution cipher you choose should be clearly documented in your code.
 - Include metadata at the top of each output file, such as:
