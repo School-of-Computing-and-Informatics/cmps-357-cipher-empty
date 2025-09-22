@@ -56,6 +56,7 @@ future (a learning experience).
 
 3. **Evaluation**  
    - Determine the **5 best decryptions overall** across all input files and ciphers.  
+   - For the Vigenère cipher, you can assume that the key length will be at most four characters (e.g., B, BE, BOP, Bop1, etc.). Similar restrictions may be assumed for any cipher with high time or memory complexity.
    - Restrict the evaluation alphabet to:
      ```
      a..z A..Z 0..9 . : ; ' ! ? [space]
@@ -107,3 +108,5 @@ future (a learning experience).
   - Source file name
   - Cipher used
   - Score/ranking
+- For the Vigenère cipher, you can assume that the key length will be at most four characters (e.g., B, BE, BOP, Bop1, etc.).
+  Similar restrictions may be assumed for any cipher with high time or memory complexity.
