@@ -114,3 +114,20 @@ future (a learning experience).
   - Score/ranking
 - For the Vigenère cipher, you can assume that the key length will be at most four characters (e.g., B, BE, BOP, Bop1, etc.).
   Similar restrictions may be assumed for any cipher with high time or memory complexity.
+
+## Example: Caesar Cipher with Shift 7
+
+Given the alphabet:
+```
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:;'!?
+```
+
+Plaintext:
+```
+the quick brown fox jumps over thirteen lazy dogs...
+```
+
+Cipher text (Caesar, shift 7):
+```
+Aol xBpjr iyvDu mvE qBtwz vCly AopyAllu shGF kvnzbbb
+```
