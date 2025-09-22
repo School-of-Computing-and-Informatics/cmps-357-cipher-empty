@@ -14,8 +14,9 @@ class VigenereCipher:
     
     def __init__(self):
         """Initialize the Vigenère cipher."""
-        self.alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.:;\'!? '
-        self.alphabet_size = len(self.alphabet)
+        # Use standard alphabet for consistency
+        self.alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        self.alphabet_size = 26
         # Common English words that might be used as keys
         self.common_keys = [
             'the', 'and', 'for', 'are', 'but', 'not', 'you', 'all', 'can', 'had', 'her', 'was', 'one', 'our', 'out', 'day', 'get', 'has', 'him', 'his', 'how', 'man', 'new', 'now', 'old', 'see', 'two', 'way', 'who', 'boy', 'did', 'its', 'let', 'put', 'say', 'she', 'too', 'use',
@@ -32,21 +33,25 @@ class VigenereCipher:
         key_index = 0
         
         for char in text:
-            if char in self.alphabet:
+            if char.isalpha():
                 # Get the shift from the current key character
-                key_char = key[key_index % len(key)]
-                if key_char in self.alphabet:
-                    shift = self.alphabet.index(key_char)
-                    # Find the position of the character in our alphabet
-                    old_pos = self.alphabet.index(char)
-                    # Calculate new position (subtract shift for decryption)
+                key_char = key[key_index % len(key)].lower()
+                shift = ord(key_char) - ord('a')
+                
+                if char.islower():
+                    # Handle lowercase letters
+                    old_pos = ord(char) - ord('a')
                     new_pos = (old_pos - shift) % self.alphabet_size
-                    result.append(self.alphabet[new_pos])
-                    key_index += 1
+                    result.append(chr(ord('a') + new_pos))
                 else:
-                    result.append(char)
+                    # Handle uppercase letters
+                    old_pos = ord(char.lower()) - ord('a')
+                    new_pos = (old_pos - shift) % self.alphabet_size
+                    result.append(chr(ord('a') + new_pos).upper())
+                
+                key_index += 1
             else:
-                # Keep character as-is if not in our alphabet
+                # Keep non-alphabetic characters as-is
                 result.append(char)
         
         return ''.join(result)
