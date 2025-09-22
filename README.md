@@ -3,10 +3,11 @@
 ## Overview
 This assignment involves writing a program that attempts to decrypt multiple text files using different classical ciphers. You will analyze the results and save the top candidate decryptions. Begin by filling out the necessary information below then finding the complete instructions 
 
-**Student Name:**   
-**Student ID:**   
-**Course Section:**   
-**Date:**   
+**Student Name:**  <br>
+**Student ID:**  <br>
+**Course:** CMPS 357  <br>
+**Section:** 001  <br>
+**Date:**  <br>
 
 ## Certification of Authenticity
 I certify that the solutions in this assignment are my own work. I have not
@@ -16,7 +17,7 @@ of this assignment has been explicitly acknowledged below. I have provided a
 complete list of all such tools used, along with minimal documentation
 describing how each was applied to this work.
 
-**Student's Initials:** 
+**Student's Initials:** **
 
 ## AI Tools Used
 **Tool:**
