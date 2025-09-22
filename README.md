@@ -16,7 +16,7 @@ This assignment involves writing a program that attempts to decrypt multiple tex
    Use or implement publicly available decryption methods for the following ciphers:
    - Caesar cipher
    - Vigenère cipher
-   - One additional substitution cipher of your choice (for example, Atbash or Monoalphabetic substitution).
+   - One additional substitution cipher of your choice (for example, Atbash or Monoalphabetic substitution). **Note:** Exclude any ciphers that are simplifications of the two given ciphers above. For example, ROT1, ROT13, and other Caesar cipher variants with specific shift values should not be chosen as they are well-known simplifications of the Caesar cipher.
 
 3. **Evaluation**  
    - Determine the **5 best decryptions overall** across all input files and ciphers.  
