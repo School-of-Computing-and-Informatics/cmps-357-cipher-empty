@@ -3,6 +3,11 @@ Instructions only repo for Fall 2025 PA2
 
 # PA2: Cipher Decryption Assignment
 
+**Student Name:** _____________________  
+**Student ID:** _____________________  
+**Course Section:** _____________________  
+**Date:** _____________________  
+
 ## Overview
 This assignment involves writing a program that attempts to decrypt multiple text files using different classical ciphers. You will analyze the results and save the top candidate decryptions.
 
