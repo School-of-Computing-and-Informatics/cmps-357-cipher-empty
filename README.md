@@ -13,7 +13,7 @@ This assignment involves writing a program that attempts to decrypt multiple tex
    - Your program should process all `.txt` files in this directory.
 
 2. **Decryption Methods**  
-   Implement decryption attempts using the following ciphers:
+   Use or implement publicly available decryption methods for the following ciphers:
    - Caesar cipher
    - Vigenère cipher
    - One additional substitution cipher of your choice (for example, Atbash or Monoalphabetic substitution).
