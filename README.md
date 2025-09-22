@@ -42,9 +42,12 @@ future (a learning experience).
 
 # Requirements
 1. **Input Directory**  
-   - All input files will be located in a directory named `INPUT`.  
-   - Files will have the extension `.txt`.  
-   - Your program should process all `.txt` files in this directory.
+  - All input files will be located in a directory named `INPUT`.  
+  - Files will have the extension `.txt`.  
+  - Your program should process all `.txt` files in this directory.
+
+2. **Spaces in Cipher Text**  
+  - For simplicity, spaces should be passed through unchanged to the cipher text. In other words, all word breaks in the original text will be visible in the cipher text and should remain visible in the decrypted output.
 
 2. **Decryption Methods**  
    Use or implement publicly available decryption methods for the following ciphers:
@@ -58,9 +61,10 @@ future (a learning experience).
    - Determine the **5 best decryptions overall** across all input files and ciphers.  
    - For the Vigenère cipher, you can assume that the key length will be at most four characters (e.g., B, BE, BOP, Bop1, etc.). Similar restrictions may be assumed for any cipher with high time or memory complexity.
    - Restrict the evaluation alphabet to:
-     ```
-     a..z A..Z 0..9 . : ; ' ! ? [space]
-     ```
+    ```
+    a..z A..Z 0..9 . : ; ' ! ?
+    ```
+   **Note:** Spaces are always passed through and visible in the cipher and decrypted text
 4. **Output Format**  
    - Save the 5 best decryptions in a single file named `output.md`.
    - The `output.md` file should be structured as follows:
@@ -101,7 +105,7 @@ future (a learning experience).
 - Each decryption includes the cipher used, a score or summary, and the full decrypted text.
 
 ## Notes
-- Ensure your program handles both uppercase and lowercase letters, digits, and the given symbols consistently.
+- Ensure your program handles both uppercase and lowercase letters, digits, spaces (which are always passed through and visible), and the given symbols consistently.
 - Design your scoring mechanism to fairly evaluate likelihood of correctness (e.g., letter frequencies, dictionary matching, n-gram analysis).
 - The additional substitution cipher you choose should be clearly documented in your code.
 - Include metadata at the top of each output file, such as:
