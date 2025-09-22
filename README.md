@@ -1,4 +1,4 @@
-# cmps-357-cipher-empy
+# cmps-357-cipher-empty
 Instructions only repo for Fall 2025 PA2
 
 # PA2: Cipher Decryption Assignment
