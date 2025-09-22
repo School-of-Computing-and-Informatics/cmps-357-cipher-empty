@@ -106,6 +106,7 @@ future (a learning experience).
 
 ## Notes
 - Ensure your program handles both uppercase and lowercase letters, digits, spaces (which are always passed through and visible), and the given symbols consistently.
+- Always use the alphabet exactly as given in `3. Evaluation` and in the Example below.
 - Design your scoring mechanism to fairly evaluate likelihood of correctness (e.g., letter frequencies, dictionary matching, n-gram analysis).
 - The additional substitution cipher you choose should be clearly documented in your code.
 - Include metadata at the top of each output file, such as:
