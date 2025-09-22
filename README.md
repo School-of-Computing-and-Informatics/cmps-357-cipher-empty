@@ -19,14 +19,14 @@ This assignment involves writing a program that attempts to decrypt multiple tex
    - One additional substitution cipher of your choice (for example, Atbash or Monoalphabetic substitution).
 
 3. **Evaluation**  
-   - Determine the **10 best decryptions overall** across all input files and ciphers.  
+   - Determine the **5 best decryptions overall** across all input files and ciphers.  
    - Restrict the evaluation alphabet to:
      ```
      a..z A..Z 0..9 . : ; ' ! ? [space]
      ```
 
 4. **Output Format**  
-   - Save the 10 best decryptions in a single file named `output.md`.
+   - Save the 5 best decryptions in a single file named `output.md`.
    - The `output.md` file should be structured as follows:
      - Each **input file** should have a **top-level section** (e.g., `# input1.txt`).
      - Under each input file section, include up to the best decryptions for that file as **second-level sections** (e.g., `## Decryption 1: Caesar Cipher`).
